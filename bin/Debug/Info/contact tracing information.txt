@@ -1,33 +1,33 @@
 DEMOGRAPHIC PROFILE:
 
-NAME: Christine Kylie Z. Oroga
-AGE: 20
-DATE OF BIRTH: May 22,2002
-SEX: Female
-CIVIL STATUS: Single
-NATIONALITY: Filipino
-RELIGION: Roman Catholic
-BIRTH PLACE: Gumaca, Quezon
-HOME ADDRESS:  Sitio Tabing Ilog Brgy. Villa Nava
-PHONE NO: 09206546202
-EMAIL ADDRESS: kylieoroga123@gmail.com
+Name: Xyra Shenne A. Gordora
+Age: 19
+Date Of Birth: October 21,2002
+Sex: Female
+Civil Status: Single
+Nationality: Filipino
+Religion: Roman Catholic
+Birth Place: Gumaca, Quezon
+Home Address:  Brgy. Villa Nava Gumaca, Quezon
+Phone No: 09737274374
+Email Address: xyragordora@gmail.com
 
 NATURE OF EXPOSURE: 
 
 Travel History:
 Travel Outside the Country: YES
 If yes, where: Singapore
-Date: April 28 2022
+Date: April 28,2022
 
 Travel Within the Country: YES
 If yes, where: Manila
-Date: May 4 2022
+Date: April 26,2022
 
 Attended social events: NO
 
-Exposure History
+Exposure History:
 Contact with a COVD-19 Patient:YES
-Enxposed to known COVID-19 Variant:NO
+Exposed to known COVID-19 Variant:UNKNOWN
 
-Symptomatic within 14 days after last day of exposure:YES
-If yes, date of onset of illness: May 10 2022
+Symptomatic within 14 days :YES
+If yes, date of onset of illness: May 5,2022
