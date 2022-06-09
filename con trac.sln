@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "con trac", "con trac.csproj", "{564889B0-622B-4ABD-A242-854F8767C781}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{564889B0-622B-4ABD-A242-854F8767C781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564889B0-622B-4ABD-A242-854F8767C781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564889B0-622B-4ABD-A242-854F8767C781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564889B0-622B-4ABD-A242-854F8767C781}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F724ECD2-E871-4241-A816-4772CCB9D8D4}
+	EndGlobalSection
+EndGlobal
