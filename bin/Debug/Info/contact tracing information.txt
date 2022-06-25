@@ -1,27 +1,28 @@
+Date Today: Wednesday, June 22, 2022
+11:52:12 PM
+
 DEMOGRAPHIC PROFILE:
 
-Name: Xyra Shenne A. Gordora
-Age: 19
-Date Of Birth: October 21,2002
+Name: 
+Age: 
+Date Of Birth: June 16,
 Sex: Female
-Civil Status: Single
-Nationality: Filipino
-Religion: Roman Catholic
-Birth Place: Gumaca, Quezon
-Home Address:  Brgy. Villa Nava Gumaca, Quezon
-Phone No: 09737274374
-Email Address: xyragordora@gmail.com
+Civil Status: 
+Nationality: 
+Religion: 
+Birth Place: 
+Home Address:  
+Phone No: 
+Email Address: 
 
 NATURE OF EXPOSURE: 
 
 Travel History:
 Travel Outside the Country: YES
-If yes, where: Singapore
-Date: April 28,2022
+If yes, where: 
+Date: April 29,
 
-Travel Within the Country: YES
-If yes, where: Manila
-Date: April 26,2022
+Travel Within the Country: NO
 
 Attended social events: NO
 
@@ -30,4 +31,4 @@ Contact with a COVD-19 Patient:YES
 Exposed to known COVID-19 Variant:UNKNOWN
 
 Symptomatic within 14 days :YES
-If yes, date of onset of illness: May 5,2022
+If yes, date of onset of illness: July 25,
