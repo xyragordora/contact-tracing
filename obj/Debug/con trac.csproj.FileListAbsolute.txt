@@ -8,3 +8,15 @@ C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\obj\Debug\con trac.csproj.Gene
 C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\obj\Debug\con trac.csproj.CoreCompileInputs.cache
 C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\obj\Debug\con trac.exe
 C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\obj\Debug\con trac.pdb
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\AForge.dll
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\AForge.Video.dll
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\zxing.dll
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\zxing.presentation.dll
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\AForge.xml
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\AForge.Video.xml
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\zxing.xml
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\bin\Debug\zxing.presentation.xml
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\obj\Debug\con trac.csproj.CopyComplete
+C:\Users\chris\OneDrive\Desktop\PROGRAMS\con trac\obj\Debug\con_trac.Form2.resources

@@ -9,30 +9,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+
 namespace con_trac
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
+
             InitializeComponent();
+          
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+        
+
+        private void buttonexit_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            timer2.Start();
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            labelt.Text = DateTime.Now.ToLongTimeString();
-        }
 
 
         private void button1SAVE_Click(object sender, EventArgs e)
@@ -46,7 +42,7 @@ namespace con_trac
                     StreamWriter X = new StreamWriter(@"C:\Users\chris\OneDrive\Desktop\PROGRAMS\New folder\" + Date + ".txt", true);
 
 
-                    X.WriteLine("Date Today: " + comboBoxMm.SelectedItem.ToString() + " " + comboBoxDd.SelectedItem.ToString() + " " + textBoxYy.Text);
+                    X.WriteLine("Date: " + comboBoxMm.SelectedItem.ToString() + " " + comboBoxDd.SelectedItem.ToString() + " " + textBoxYy.Text);
                     X.WriteLine("Log-in Time: " + labelt.Text);
 
                     X.WriteLine();
@@ -65,7 +61,7 @@ namespace con_trac
 
                     X.WriteLine(labelCivil.Text + " " + textBoxCivil.Text); //CIVIL STAT
                     X.WriteLine(labelNation.Text + " " + textBoxNation.Text); //NATIONALITY
-                    X.WriteLine(labelRel.Text + " " + textBoxRel.Text); //RELIGION
+
                     X.WriteLine(labelHomeadd.Text + " " + textBoxHomeadd.Text); //HOME ADDRESS
                     X.WriteLine(labelPhone.Text + " " + textBoxPhone.Text); //PHONE NO.
                     X.WriteLine(labelEmail.Text + " " + textBoxEmail.Text); //EMAIL
@@ -200,102 +196,123 @@ namespace con_trac
                 catch
                 {
                 }
+            }
+    }
 
-
-                }
+    private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 MainForm = new Form1();
+            MainForm.Show();
+            this.Hide();
+        }
+
+
+
         private void buttonclear_Click(object sender, EventArgs e)
         {
-                //Demographic prof
-                textBoxName.Clear();
-                textBoxAge.Clear();
-                comboBoxMbday.ResetText();
-                comboBoxDbday.ResetText();
-                textBoxYbday.Clear();
-                comboBoxSex.ResetText();
-                textBoxCivil.Clear();
-                textBoxNation.Clear();
-                textBoxRel.Clear();
-                textBoxHomeadd.Clear();
-                textBoxPhone.Clear();
-                textBoxEmail.Clear();
+            //Demographic prof
+            textBoxName.Clear();
+            textBoxAge.Clear();
+            comboBoxMbday.ResetText();
+            comboBoxDbday.ResetText();
+            textBoxYbday.Clear();
+            comboBoxSex.ResetText();
+            textBoxCivil.Clear();
+            textBoxNation.Clear();
 
-                //Nature of exposure
-                checkBoxY1.Checked = false;
-                checkBoxN1.Checked = false;
-                textBoxifY1.Clear();
-                comboBoxDa1.ResetText();
-                comboBoxMo1.ResetText();
-                textBoxYear1.Clear();
+            textBoxHomeadd.Clear();
+            textBoxPhone.Clear();
+            textBoxEmail.Clear();
 
-                checkBoxY2.Checked = false;
-                checkBoxN2.Checked = false;
-                checkBoxUnknown.Checked = false;
-                textBoxifY2.Clear();
-                comboBoxDa2.ResetText();
-                comboBoxMo2.ResetText();
-                textBoxYear2.Clear();
+            //Nature of exposure
+            checkBoxY1.Checked = false;
+            checkBoxN1.Checked = false;
+            textBoxifY1.Clear();
+            comboBoxDa1.ResetText();
+            comboBoxMo1.ResetText();
+            textBoxYear1.Clear();
 
-                checkBoxY3.Checked = false;
-                checkBoxN3.Checked = false;
-                textBoxifY3.Clear();
-                comboBoxDa3.ResetText();
-                comboBoxMo3.ResetText();
-                textBoxYear3.Clear();
+            checkBoxY2.Checked = false;
+            checkBoxN2.Checked = false;
+            checkBoxUnknown.Checked = false;
+            textBoxifY2.Clear();
+            comboBoxDa2.ResetText();
+            comboBoxMo2.ResetText();
+            textBoxYear2.Clear();
 
-                checkBoxY4.Checked = false;
-                checkBoxN4.Checked = false;
+            checkBoxY3.Checked = false;
+            checkBoxN3.Checked = false;
+            textBoxifY3.Clear();
+            comboBoxDa3.ResetText();
+            comboBoxMo3.ResetText();
+            textBoxYear3.Clear();
 
-                checkBoxY5.Checked = false;
-                checkBoxN5.Checked = false;
+            checkBoxY4.Checked = false;
+            checkBoxN4.Checked = false;
 
-                checkBoxY6.Checked = false;
-                checkBoxN6.Checked = false;
+            checkBoxY5.Checked = false;
+            checkBoxN5.Checked = false;
 
-                comboBoxDa4.ResetText();
-                comboBoxMo4.ResetText();
-                textBoxYear4.Clear();
+            checkBoxY6.Checked = false;
+            checkBoxN6.Checked = false;
 
-                checkBoxN1.Enabled = true;
-                checkBoxY4.Enabled = true;
-                checkBoxY1.Enabled = true;
-                comboBoxDa1.Enabled = true;
-                comboBoxMo1.Enabled = true;
-                textBoxYear1.Enabled = true;
-                textBoxifY1.Enabled = true;
+            comboBoxDa4.ResetText();
+            comboBoxMo4.ResetText();
+            textBoxYear4.Clear();
 
-                checkBoxN2.Enabled = true;
-                checkBoxY4.Enabled = true;
-                checkBoxY2.Enabled = true;
-                comboBoxDa2.Enabled = true;
-                comboBoxMo2.Enabled = true;
-                textBoxYear2.Enabled = true;
-                textBoxifY2.Enabled = true;
+            checkBoxN1.Enabled = true;
+            checkBoxY4.Enabled = true;
+            checkBoxY1.Enabled = true;
+            comboBoxDa1.Enabled = true;
+            comboBoxMo1.Enabled = true;
+            textBoxYear1.Enabled = true;
+            textBoxifY1.Enabled = true;
 
-                checkBoxN3.Enabled = true;
-                checkBoxY4.Enabled = true;
-                checkBoxY3.Enabled = true;
-                comboBoxDa3.Enabled = true;
-                comboBoxMo3.Enabled = true;
-                textBoxYear3.Enabled = true;
-                textBoxifY3.Enabled = true;
+            checkBoxN2.Enabled = true;
+            checkBoxY4.Enabled = true;
+            checkBoxY2.Enabled = true;
+            comboBoxDa2.Enabled = true;
+            comboBoxMo2.Enabled = true;
+            textBoxYear2.Enabled = true;
+            textBoxifY2.Enabled = true;
 
-                checkBoxN4.Enabled = true;
-                checkBoxY4.Enabled = true;
+            checkBoxN3.Enabled = true;
+            checkBoxY4.Enabled = true;
+            checkBoxY3.Enabled = true;
+            comboBoxDa3.Enabled = true;
+            comboBoxMo3.Enabled = true;
+            textBoxYear3.Enabled = true;
+            textBoxifY3.Enabled = true;
 
-                checkBoxN5.Enabled = true;
-                checkBoxY5.Enabled = true;
+            checkBoxN4.Enabled = true;
+            checkBoxY4.Enabled = true;
 
-                checkBoxN6.Enabled = true;
-                checkBoxY6.Enabled = true;
+            checkBoxN5.Enabled = true;
+            checkBoxY5.Enabled = true;
 
-                checkBoxY6.Enabled = true;
-                comboBoxDa4.Enabled = true;
-                comboBoxMo4.Enabled = true;
-                textBoxYear4.Enabled = true;
-            }
+            checkBoxN6.Enabled = true;
+            checkBoxY6.Enabled = true;
 
-        
+            checkBoxY6.Enabled = true;
+            comboBoxDa4.Enabled = true;
+            comboBoxMo4.Enabled = true;
+            textBoxYear4.Enabled = true;
+        }
+
+        private void buttonexit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            labelt.Text = DateTime.Now.ToLongTimeString();
+        }
 
         private void buttondisplay_Click(object sender, EventArgs e)
         {
@@ -317,9 +334,8 @@ namespace con_trac
                     string line = readInfo.ReadToEnd();
                     richTextBox1.Text = line;
                 }
-            
-            
-            
+
+
             }
             catch
             {
@@ -327,20 +343,35 @@ namespace con_trac
             }
         }
 
-        private void buttonexit_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            Application.Exit();
+            timer2.Start();
+        }
+
+        private void QR_Click(object sender, EventArgs e)
+        {
+            Form2 Back = new Form2();
+            Back.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            textBoxDate.Clear();
+            richTextBox1.Clear();
         }
     }
-    }
-    
-
-    
+}
 
 
 
 
 
 
-    
-    
+
+
+
+
+
+
+

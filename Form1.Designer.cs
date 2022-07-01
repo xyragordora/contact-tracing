@@ -31,15 +31,16 @@ namespace con_trac
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.labelt = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBoxDd = new System.Windows.Forms.ComboBox();
             this.textBoxYy = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
+            this.labelt = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,14 +51,12 @@ namespace con_trac
             this.textBoxHomeadd = new System.Windows.Forms.TextBox();
             this.comboBoxSex = new System.Windows.Forms.ComboBox();
             this.labelSex = new System.Windows.Forms.Label();
-            this.textBoxRel = new System.Windows.Forms.TextBox();
             this.textBoxNation = new System.Windows.Forms.TextBox();
             this.textBoxCivil = new System.Windows.Forms.TextBox();
             this.textBoxAge = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelPhone = new System.Windows.Forms.Label();
             this.labelHomeadd = new System.Windows.Forms.Label();
-            this.labelRel = new System.Windows.Forms.Label();
             this.comboBoxDbday = new System.Windows.Forms.ComboBox();
             this.comboBoxMbday = new System.Windows.Forms.ComboBox();
             this.labelCivil = new System.Windows.Forms.Label();
@@ -135,10 +134,13 @@ namespace con_trac
             this.button1SAVE = new System.Windows.Forms.Button();
             this.buttonexit = new System.Windows.Forms.Button();
             this.buttonclear = new System.Windows.Forms.Button();
+            this.QR = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.buttondisplay = new System.Windows.Forms.Button();
             this.textBoxDate = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.buttondisplay = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -153,54 +155,49 @@ namespace con_trac
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // timer1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(47, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 105);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(152, 64);
+            this.label2.Location = new System.Drawing.Point(130, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(318, 45);
-            this.label2.TabIndex = 14;
+            this.label2.TabIndex = 22;
             this.label2.Text = "CONTACT TRACING";
             // 
-            // timer2
+            // pictureBox1
             // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // labelt
-            // 
-            this.labelt.AutoSize = true;
-            this.labelt.Font = new System.Drawing.Font("Microsoft JhengHei", 10F);
-            this.labelt.Location = new System.Drawing.Point(32, 28);
-            this.labelt.Name = "labelt";
-            this.labelt.Size = new System.Drawing.Size(59, 25);
-            this.labelt.TabIndex = 50;
-            this.labelt.Text = "TIME";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(145, 105);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.Controls.Add(this.groupBox1);
             this.flowLayoutPanel1.Controls.Add(this.groupBox3);
             this.flowLayoutPanel1.Controls.Add(this.groupBox8);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(51, 162);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox4);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(59, 155);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(862, 560);
-            this.flowLayoutPanel1.TabIndex = 58;
+            this.flowLayoutPanel1.TabIndex = 62;
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.comboBoxDd);
             this.groupBox2.Controls.Add(this.textBoxYy);
             this.groupBox2.Controls.Add(this.label28);
@@ -272,6 +269,16 @@ namespace con_trac
             this.label28.TabIndex = 145;
             this.label28.Text = "Year";
             // 
+            // labelt
+            // 
+            this.labelt.AutoSize = true;
+            this.labelt.Font = new System.Drawing.Font("Microsoft JhengHei", 10F);
+            this.labelt.Location = new System.Drawing.Point(32, 28);
+            this.labelt.Name = "labelt";
+            this.labelt.Size = new System.Drawing.Size(59, 25);
+            this.labelt.TabIndex = 50;
+            this.labelt.Text = "TIME";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -325,19 +332,18 @@ namespace con_trac
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.textBoxEmail);
             this.groupBox1.Controls.Add(this.textBoxPhone);
             this.groupBox1.Controls.Add(this.textBoxHomeadd);
             this.groupBox1.Controls.Add(this.comboBoxSex);
             this.groupBox1.Controls.Add(this.labelSex);
-            this.groupBox1.Controls.Add(this.textBoxRel);
             this.groupBox1.Controls.Add(this.textBoxNation);
             this.groupBox1.Controls.Add(this.textBoxCivil);
             this.groupBox1.Controls.Add(this.textBoxAge);
             this.groupBox1.Controls.Add(this.labelEmail);
             this.groupBox1.Controls.Add(this.labelPhone);
             this.groupBox1.Controls.Add(this.labelHomeadd);
-            this.groupBox1.Controls.Add(this.labelRel);
             this.groupBox1.Controls.Add(this.comboBoxDbday);
             this.groupBox1.Controls.Add(this.comboBoxMbday);
             this.groupBox1.Controls.Add(this.labelCivil);
@@ -403,14 +409,6 @@ namespace con_trac
             this.labelSex.TabIndex = 3;
             this.labelSex.Text = "Sex:";
             // 
-            // textBoxRel
-            // 
-            this.textBoxRel.Location = new System.Drawing.Point(424, 209);
-            this.textBoxRel.Multiline = true;
-            this.textBoxRel.Name = "textBoxRel";
-            this.textBoxRel.Size = new System.Drawing.Size(368, 33);
-            this.textBoxRel.TabIndex = 42;
-            // 
             // textBoxNation
             // 
             this.textBoxNation.Location = new System.Drawing.Point(163, 266);
@@ -421,7 +419,7 @@ namespace con_trac
             // 
             // textBoxCivil
             // 
-            this.textBoxCivil.Location = new System.Drawing.Point(560, 266);
+            this.textBoxCivil.Location = new System.Drawing.Point(562, 266);
             this.textBoxCivil.Multiline = true;
             this.textBoxCivil.Name = "textBoxCivil";
             this.textBoxCivil.Size = new System.Drawing.Size(232, 33);
@@ -464,16 +462,6 @@ namespace con_trac
             this.labelHomeadd.Size = new System.Drawing.Size(127, 20);
             this.labelHomeadd.TabIndex = 26;
             this.labelHomeadd.Text = "Home Address: ";
-            // 
-            // labelRel
-            // 
-            this.labelRel.AutoSize = true;
-            this.labelRel.Font = new System.Drawing.Font("Microsoft JhengHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRel.Location = new System.Drawing.Point(333, 216);
-            this.labelRel.Name = "labelRel";
-            this.labelRel.Size = new System.Drawing.Size(74, 20);
-            this.labelRel.TabIndex = 24;
-            this.labelRel.Text = "Religion:";
             // 
             // comboBoxDbday
             // 
@@ -539,7 +527,7 @@ namespace con_trac
             // 
             this.labelCivil.AutoSize = true;
             this.labelCivil.Font = new System.Drawing.Font("Microsoft JhengHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCivil.Location = new System.Drawing.Point(456, 273);
+            this.labelCivil.Location = new System.Drawing.Point(458, 273);
             this.labelCivil.Name = "labelCivil";
             this.labelCivil.Size = new System.Drawing.Size(95, 20);
             this.labelCivil.TabIndex = 20;
@@ -556,7 +544,7 @@ namespace con_trac
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(752, 163);
+            this.label11.Location = new System.Drawing.Point(752, 168);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(40, 20);
             this.label11.TabIndex = 18;
@@ -566,7 +554,7 @@ namespace con_trac
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(621, 163);
+            this.label10.Location = new System.Drawing.Point(621, 168);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 20);
             this.label10.TabIndex = 17;
@@ -576,7 +564,7 @@ namespace con_trac
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(482, 163);
+            this.label9.Location = new System.Drawing.Point(482, 167);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(56, 20);
             this.label9.TabIndex = 16;
@@ -739,7 +727,7 @@ namespace con_trac
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(257, 173);
+            this.label40.Location = new System.Drawing.Point(257, 176);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(56, 20);
             this.label40.TabIndex = 78;
@@ -749,7 +737,7 @@ namespace con_trac
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(396, 173);
+            this.label39.Location = new System.Drawing.Point(396, 176);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(44, 20);
             this.label39.TabIndex = 79;
@@ -759,7 +747,7 @@ namespace con_trac
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(527, 173);
+            this.label38.Location = new System.Drawing.Point(527, 177);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(40, 20);
             this.label38.TabIndex = 80;
@@ -922,7 +910,7 @@ namespace con_trac
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(253, 156);
+            this.label31.Location = new System.Drawing.Point(253, 159);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(56, 20);
             this.label31.TabIndex = 57;
@@ -932,7 +920,7 @@ namespace con_trac
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(392, 156);
+            this.label32.Location = new System.Drawing.Point(392, 159);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(44, 20);
             this.label32.TabIndex = 58;
@@ -942,7 +930,7 @@ namespace con_trac
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(523, 156);
+            this.label33.Location = new System.Drawing.Point(523, 159);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(40, 20);
             this.label33.TabIndex = 59;
@@ -1113,7 +1101,7 @@ namespace con_trac
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(255, 168);
+            this.label34.Location = new System.Drawing.Point(255, 171);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(56, 20);
             this.label34.TabIndex = 66;
@@ -1123,7 +1111,7 @@ namespace con_trac
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(394, 168);
+            this.label35.Location = new System.Drawing.Point(394, 171);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(44, 20);
             this.label35.TabIndex = 67;
@@ -1133,7 +1121,7 @@ namespace con_trac
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(525, 168);
+            this.label36.Location = new System.Drawing.Point(525, 171);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(40, 20);
             this.label36.TabIndex = 68;
@@ -1450,15 +1438,15 @@ namespace con_trac
             this.groupBox4.Controls.Add(this.button1SAVE);
             this.groupBox4.Controls.Add(this.buttonexit);
             this.groupBox4.Controls.Add(this.buttonclear);
-            this.groupBox4.Location = new System.Drawing.Point(612, 745);
+            this.groupBox4.Location = new System.Drawing.Point(3, 1718);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(298, 77);
-            this.groupBox4.TabIndex = 140;
+            this.groupBox4.Size = new System.Drawing.Size(827, 77);
+            this.groupBox4.TabIndex = 156;
             this.groupBox4.TabStop = false;
             // 
             // button1SAVE
             // 
-            this.button1SAVE.Location = new System.Drawing.Point(121, 26);
+            this.button1SAVE.Location = new System.Drawing.Point(582, 28);
             this.button1SAVE.Name = "button1SAVE";
             this.button1SAVE.Size = new System.Drawing.Size(111, 34);
             this.button1SAVE.TabIndex = 134;
@@ -1472,18 +1460,18 @@ namespace con_trac
             this.buttonexit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonexit.FlatAppearance.BorderSize = 0;
             this.buttonexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonexit.Location = new System.Drawing.Point(238, 17);
+            this.buttonexit.Location = new System.Drawing.Point(699, 19);
             this.buttonexit.Name = "buttonexit";
             this.buttonexit.Size = new System.Drawing.Size(46, 47);
             this.buttonexit.TabIndex = 133;
             this.buttonexit.UseVisualStyleBackColor = true;
-            this.buttonexit.Click += new System.EventHandler(this.buttonexit_Click);
+            this.buttonexit.Click += new System.EventHandler(this.buttonexit_Click_1);
             // 
             // buttonclear
             // 
             this.buttonclear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonclear.Font = new System.Drawing.Font("Microsoft JhengHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonclear.Location = new System.Drawing.Point(9, 26);
+            this.buttonclear.Location = new System.Drawing.Point(470, 28);
             this.buttonclear.Name = "buttonclear";
             this.buttonclear.Size = new System.Drawing.Size(106, 34);
             this.buttonclear.TabIndex = 129;
@@ -1491,21 +1479,33 @@ namespace con_trac
             this.buttonclear.UseVisualStyleBackColor = true;
             this.buttonclear.Click += new System.EventHandler(this.buttonclear_Click);
             // 
-            // textBoxDate
+            // QR
             // 
-            this.textBoxDate.Location = new System.Drawing.Point(1024, 162);
-            this.textBoxDate.Multiline = true;
-            this.textBoxDate.Name = "textBoxDate";
-            this.textBoxDate.Size = new System.Drawing.Size(283, 41);
-            this.textBoxDate.TabIndex = 141;
+            this.QR.BackColor = System.Drawing.Color.Transparent;
+            this.QR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("QR.BackgroundImage")));
+            this.QR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.QR.FlatAppearance.BorderSize = 0;
+            this.QR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.QR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QR.Location = new System.Drawing.Point(979, 153);
+            this.QR.Name = "QR";
+            this.QR.Size = new System.Drawing.Size(98, 83);
+            this.QR.TabIndex = 162;
+            this.QR.UseVisualStyleBackColor = false;
+            this.QR.Click += new System.EventHandler(this.QR_Click);
             // 
-            // richTextBox1
+            // groupBox5
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(1024, 225);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(342, 586);
-            this.richTextBox1.TabIndex = 145;
-            this.richTextBox1.Text = "";
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.Controls.Add(this.button1);
+            this.groupBox5.Controls.Add(this.buttondisplay);
+            this.groupBox5.Controls.Add(this.textBoxDate);
+            this.groupBox5.Controls.Add(this.richTextBox1);
+            this.groupBox5.Location = new System.Drawing.Point(990, 254);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(436, 461);
+            this.groupBox5.TabIndex = 161;
+            this.groupBox5.TabStop = false;
             // 
             // buttondisplay
             // 
@@ -1514,36 +1514,71 @@ namespace con_trac
             this.buttondisplay.FlatAppearance.BorderSize = 0;
             this.buttondisplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttondisplay.Font = new System.Drawing.Font("Microsoft JhengHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttondisplay.Location = new System.Drawing.Point(344, 37);
+            this.buttondisplay.Location = new System.Drawing.Point(342, 48);
             this.buttondisplay.Name = "buttondisplay";
             this.buttondisplay.Size = new System.Drawing.Size(55, 62);
             this.buttondisplay.TabIndex = 134;
             this.buttondisplay.UseVisualStyleBackColor = true;
             this.buttondisplay.Click += new System.EventHandler(this.buttondisplay_Click);
             // 
-            // groupBox5
+            // textBoxDate
             // 
-            this.groupBox5.Controls.Add(this.buttondisplay);
-            this.groupBox5.Location = new System.Drawing.Point(971, 120);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(449, 702);
-            this.groupBox5.TabIndex = 146;
-            this.groupBox5.TabStop = false;
+            this.textBoxDate.Location = new System.Drawing.Point(53, 53);
+            this.textBoxDate.Multiline = true;
+            this.textBoxDate.Name = "textBoxDate";
+            this.textBoxDate.Size = new System.Drawing.Size(283, 41);
+            this.textBoxDate.TabIndex = 141;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(53, 112);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(342, 266);
+            this.richTextBox1.TabIndex = 145;
+            this.richTextBox1.Text = "";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(1096, 158);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(359, 120);
+            this.label4.TabIndex = 163;
+            this.label4.Text = "Scan the QR code with the web camera; \r\nYou can provide your information automati" +
+    "cally\r\nor manually. It provides a quick method of \r\ndetermining where you are in" +
+    " a given location.\r\n\r\n\r\n";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(291, 402);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 34);
+            this.button1.TabIndex = 164;
+            this.button1.Text = "CLEAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1459, 858);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBoxDate);
-            this.Controls.Add(this.groupBox4);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1447, 770);
+            this.Controls.Add(this.QR);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox5);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1566,21 +1601,23 @@ namespace con_trac
             this.groupBox9.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Label labelt;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboBoxDd;
         private System.Windows.Forms.TextBox textBoxYy;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label labelt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label1;
@@ -1591,14 +1628,12 @@ namespace con_trac
         private System.Windows.Forms.TextBox textBoxHomeadd;
         private System.Windows.Forms.ComboBox comboBoxSex;
         private System.Windows.Forms.Label labelSex;
-        private System.Windows.Forms.TextBox textBoxRel;
         private System.Windows.Forms.TextBox textBoxNation;
         private System.Windows.Forms.TextBox textBoxCivil;
         private System.Windows.Forms.TextBox textBoxAge;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelPhone;
         private System.Windows.Forms.Label labelHomeadd;
-        private System.Windows.Forms.Label labelRel;
         private System.Windows.Forms.ComboBox comboBoxDbday;
         private System.Windows.Forms.ComboBox comboBoxMbday;
         private System.Windows.Forms.Label labelCivil;
@@ -1673,13 +1708,16 @@ namespace con_trac
         private System.Windows.Forms.CheckBox checkBoxN6;
         private System.Windows.Forms.ComboBox comboBoxMo4;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button1SAVE;
         private System.Windows.Forms.Button buttonexit;
         private System.Windows.Forms.Button buttonclear;
+        private System.Windows.Forms.Button QR;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button buttondisplay;
         private System.Windows.Forms.TextBox textBoxDate;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button buttondisplay;
-        private System.Windows.Forms.Button button1SAVE;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }
 
